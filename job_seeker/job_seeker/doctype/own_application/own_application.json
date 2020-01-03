@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "format:own-application.####",
+ "creation": "2020-01-03 11:57:50.661312",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_id_lead",
+  "address",
+  "column_break1",
+  "company_name",
+  "distance",
+  "section_break1",
+  "job_title",
+  "applications_documents",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_id_lead",
+   "fieldtype": "Link",
+   "label": "Company-ID (Lead)",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Float",
+   "label": "Distance (Km)"
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "applications_documents",
+   "fieldtype": "Attach",
+   "label": "Application Documnts"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSent\nRejected\nSuccess"
+  }
+ ],
+ "links": [],
+ "modified": "2020-01-03 11:57:50.661312",
+ "modified_by": "Administrator",
+ "module": "Job Seeker",
+ "name": "Own Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
