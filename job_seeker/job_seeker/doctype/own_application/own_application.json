@@ -6,13 +6,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "job_title",
   "company_id_lead",
   "address",
   "column_break1",
   "company_name",
   "distance",
   "section_break1",
-  "job_title",
   "applications_documents",
   "status"
  ],
@@ -67,8 +67,8 @@
   }
  ],
  "links": [],
- "modified": "2020-01-03 12:01:41.363582",
- "modified_by": "Administrator",
+ "modified": "2020-01-03 12:58:53.975170",
+ "modified_by": "robin.rosenstock@t-online.de",
  "module": "Job Seeker",
  "name": "Own Application",
  "owner": "Administrator",
