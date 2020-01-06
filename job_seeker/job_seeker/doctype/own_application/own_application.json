@@ -36,12 +36,14 @@
   {
    "fieldname": "company_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Company Name",
    "read_only": 1
   },
   {
    "fieldname": "distance",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Distance (Km)",
    "read_only": 1
   },
@@ -62,12 +64,13 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Draft\nSent\nRejected\nSuccess"
   }
  ],
  "links": [],
- "modified": "2020-01-03 12:58:53.975170",
+ "modified": "2020-01-06 14:46:52.265047",
  "modified_by": "robin.rosenstock@t-online.de",
  "module": "Job Seeker",
  "name": "Own Application",
