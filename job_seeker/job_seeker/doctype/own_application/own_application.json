@@ -11,6 +11,7 @@
   "address",
   "ansprechpartner",
   "status",
+  "bewerbungsmethode",
   "column_break1",
   "company_name",
   "distance",
@@ -95,10 +96,16 @@
    "fieldtype": "Link",
    "label": "Ansprechpartner",
    "options": "Contact"
+  },
+  {
+   "fieldname": "bewerbungsmethode",
+   "fieldtype": "Table MultiSelect",
+   "label": "Bewerbungsmethode",
+   "options": "link_bewerbungsmethode"
   }
  ],
  "links": [],
- "modified": "2020-01-25 10:43:45.774207",
+ "modified": "2020-02-02 11:39:34.562378",
  "modified_by": "robin.rosenstock@t-online.de",
  "module": "Job Seeker",
  "name": "Own Application",
