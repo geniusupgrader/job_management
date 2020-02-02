@@ -9,25 +9,32 @@
   "job_title",
   "company_id_lead",
   "address",
+  "ansprechpartner",
+  "status",
   "column_break1",
   "company_name",
   "distance",
   "section_break1",
-  "applications_documents",
-  "status"
+  "url_stellenanzeige",
+  "pdf_stellenanzeige",
+  "column_break2",
+  "applications_documents"
  ],
  "fields": [
   {
    "fieldname": "company_id_lead",
    "fieldtype": "Link",
    "label": "Company-ID (Lead)",
-   "options": "Lead"
+   "options": "Lead",
+   "reqd": 1
   },
   {
    "fieldname": "address",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Address",
-   "options": "Address"
+   "options": "Address",
+   "search_index": 1
   },
   {
    "fieldname": "column_break1",
@@ -54,7 +61,8 @@
   {
    "fieldname": "job_title",
    "fieldtype": "Data",
-   "label": "Job Title"
+   "label": "Job Title",
+   "reqd": 1
   },
   {
    "fieldname": "applications_documents",
@@ -67,10 +75,30 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "Draft\nSent\nRejected\nSuccess"
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url_stellenanzeige",
+   "fieldtype": "Data",
+   "label": "URL Stellenanzeige"
+  },
+  {
+   "fieldname": "pdf_stellenanzeige",
+   "fieldtype": "Attach",
+   "label": "PDF Stellenanzeige"
+  },
+  {
+   "fieldname": "ansprechpartner",
+   "fieldtype": "Link",
+   "label": "Ansprechpartner",
+   "options": "Contact"
   }
  ],
  "links": [],
- "modified": "2020-01-06 14:46:52.265047",
+ "modified": "2020-01-25 10:43:45.774207",
  "modified_by": "robin.rosenstock@t-online.de",
  "module": "Job Seeker",
  "name": "Own Application",
@@ -91,6 +119,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "job_title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1
