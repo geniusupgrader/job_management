@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_events_in_timeline": 1,
  "autoname": "format:own-application.{####}",
  "creation": "2020-01-03 11:57:50.661312",
  "doctype": "DocType",
@@ -105,7 +106,7 @@
   }
  ],
  "links": [],
- "modified": "2020-02-02 11:39:34.562378",
+ "modified": "2020-02-09 20:42:39.080288",
  "modified_by": "robin.rosenstock@t-online.de",
  "module": "Job Seeker",
  "name": "Own Application",
