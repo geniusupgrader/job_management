@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2020-02-02 11:38:19.701041",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bewerbungsmethode"
+ ],
+ "fields": [
+  {
+   "fieldname": "bewerbungsmethode",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bewerbungsmethode",
+   "options": "Bewerbungsmethode"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-04-04 17:37:31.572609",
+ "modified_by": "Administrator",
+ "module": "Job Seeker",
+ "name": "link_bewerbungsmethode",
+ "owner": "robin.rosenstock@t-online.de",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
