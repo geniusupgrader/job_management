@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from . import __version__ as app_version
 
-app_name = "job_seeker"
+app_name = "job_seeking"
 app_title = "Job Seeker"
 app_publisher = "Robin Rosenstock"
 app_description = "For own Applications"
@@ -15,12 +15,12 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/job_seeker/css/job_seeker.css"
-# app_include_js = "/assets/job_seeker/js/job_seeker.js"
+# app_include_css = "/assets/job_seeking/css/job_seeking.css"
+# app_include_js = "/assets/job_seeking/js/job_seeking.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/job_seeker/css/job_seeker.css"
-# web_include_js = "/assets/job_seeker/js/job_seeker.js"
+# web_include_css = "/assets/job_seeking/css/job_seeking.css"
+# web_include_js = "/assets/job_seeking/js/job_seeking.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
@@ -43,7 +43,7 @@ app_license = "MIT"
 # }
 
 # Website user home page (by function)
-# get_website_user_home_page = "job_seeker.utils.get_home_page"
+# get_website_user_home_page = "job_seeking.utils.get_home_page"
 
 # Generators
 # ----------
@@ -54,14 +54,14 @@ app_license = "MIT"
 # Installation
 # ------------
 
-# before_install = "job_seeker.install.before_install"
-# after_install = "job_seeker.install.after_install"
+# before_install = "job_seeking.install.before_install"
+# after_install = "job_seeking.install.after_install"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "job_seeker.notifications.get_notification_config"
+# notification_config = "job_seeking.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -92,38 +92,38 @@ app_license = "MIT"
 
 # scheduler_events = {
 # 	"all": [
-# 		"job_seeker.tasks.all"
+# 		"job_seeking.tasks.all"
 # 	],
 # 	"daily": [
-# 		"job_seeker.tasks.daily"
+# 		"job_seeking.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"job_seeker.tasks.hourly"
+# 		"job_seeking.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"job_seeker.tasks.weekly"
+# 		"job_seeking.tasks.weekly"
 # 	]
 # 	"monthly": [
-# 		"job_seeker.tasks.monthly"
+# 		"job_seeking.tasks.monthly"
 # 	]
 # }
 
 # Testing
 # -------
 
-# before_tests = "job_seeker.install.before_tests"
+# before_tests = "job_seeking.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "job_seeker.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "job_seeking.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "job_seeker.task.get_dashboard_data"
+# 	"Task": "job_seeking.task.get_dashboard_data"
 # }
 
