@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_events_in_timeline": 1,
  "autoname": "format:own-application.{####}",
  "creation": "2020-01-03 11:57:50.661312",
@@ -46,6 +45,7 @@
    "fieldname": "company_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Company Name",
    "read_only": 1
   },
@@ -75,6 +75,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Draft\nSent\nRejected\nSuccess"
   },
@@ -105,9 +106,8 @@
    "options": "link_bewerbungsmethode"
   }
  ],
- "links": [],
- "modified": "2020-02-09 20:42:39.080288",
- "modified_by": "robin.rosenstock@t-online.de",
+ "modified": "2020-08-15 16:52:15.535878",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Seeker",
  "name": "Own Application",
  "owner": "Administrator",
