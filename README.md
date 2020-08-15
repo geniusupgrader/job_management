@@ -1,4 +1,4 @@
-## Job Seeker
+## Job Seeking
 
 For own Applications
 
