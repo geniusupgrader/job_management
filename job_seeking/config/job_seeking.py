@@ -8,8 +8,8 @@ def get_data():
 			"items": [
 				{
 					"type": "doctype",
-					"name": "Own Application",
-					"description":_("Own Application"),
+					"name": "job_application_job_seeking",
+					"description":_("Job Application"),
 					"onboard": 1,
 				}
 			]

@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class link_bewerbungsmethode(Document):
+class application_method_table_job_seeking(Document):
 	pass

@@ -1,13 +1,15 @@
 {
  "allow_events_in_timeline": 1,
- "autoname": "format:own-application.{####}",
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:job_application.{####}",
  "creation": "2020-01-03 11:57:50.661312",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "job_title",
-  "company_id_lead",
+  "company_id",
   "address",
   "ansprechpartner",
   "status",
@@ -19,16 +21,11 @@
   "url_stellenanzeige",
   "pdf_stellenanzeige",
   "column_break2",
-  "applications_documents"
+  "applications_documents",
+  "sectien_break3",
+  "text"
  ],
  "fields": [
-  {
-   "fieldname": "company_id_lead",
-   "fieldtype": "Link",
-   "label": "Company-ID (Lead)",
-   "options": "Lead",
-   "reqd": 1
-  },
   {
    "fieldname": "address",
    "fieldtype": "Link",
@@ -42,6 +39,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "company_id.company_name",
    "fieldname": "company_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -63,8 +61,7 @@
   {
    "fieldname": "job_title",
    "fieldtype": "Data",
-   "label": "Job Title",
-   "reqd": 1
+   "label": "Job Title"
   },
   {
    "fieldname": "applications_documents",
@@ -103,13 +100,28 @@
    "fieldname": "bewerbungsmethode",
    "fieldtype": "Table MultiSelect",
    "label": "Bewerbungsmethode",
-   "options": "link_bewerbungsmethode"
+   "options": "application_method_table_job_seeking"
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Link",
+   "label": "Company-ID (Lead)",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Long Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "sectien_break3",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2020-08-15 16:52:15.535878",
- "modified_by": "email@robinrosenstock.com",
+ "modified": "2020-08-17 22:28:03.082850",
+ "modified_by": "Administrator",
  "module": "Job Seeking",
- "name": "Own Application",
+ "name": "job_application_job_seeking",
  "owner": "Administrator",
  "permissions": [
   {

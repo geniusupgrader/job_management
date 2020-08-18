@@ -1,7 +1,7 @@
 // Copyright (c) 2020, Robin Rosenstock and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Own Application', {
+frappe.ui.form.on('job_application_job_seeking', {
 	// refresh: function(frm) {
 
 	// }
