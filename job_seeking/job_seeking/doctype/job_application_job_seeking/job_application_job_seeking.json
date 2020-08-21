@@ -17,12 +17,17 @@
   "column_break1",
   "company_name",
   "distance",
+  "location",
+  "send_date",
   "section_break1",
   "url_stellenanzeige",
   "pdf_stellenanzeige",
   "column_break2",
   "applications_documents",
   "sectien_break3",
+  "text_template",
+  "fold1",
+  "section4",
   "text"
  ],
  "fields": [
@@ -111,14 +116,40 @@
   {
    "fieldname": "text",
    "fieldtype": "Long Text",
-   "label": "Text"
+   "label": "Custom Text"
   },
   {
    "fieldname": "sectien_break3",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "text_template",
+   "fieldtype": "Link",
+   "label": "Text template",
+   "options": "Text_Template_job_seeking"
+  },
+  {
+   "fieldname": "send_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "fold1",
+   "fieldtype": "Fold",
+   "label": "fold"
+  },
+  {
+   "fieldname": "section4",
+   "fieldtype": "Section Break",
+   "label": "uiae"
   }
  ],
- "modified": "2020-08-17 22:28:03.082850",
+ "modified": "2020-08-20 23:08:34.421031",
  "modified_by": "Administrator",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
