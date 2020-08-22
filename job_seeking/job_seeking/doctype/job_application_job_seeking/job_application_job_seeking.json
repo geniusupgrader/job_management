@@ -24,6 +24,8 @@
   "pdf_stellenanzeige",
   "column_break2",
   "applications_documents",
+  "cv_pdf",
+  "cv_files",
   "sectien_break3",
   "text_template",
   "fold1",
@@ -141,15 +143,24 @@
   {
    "fieldname": "fold1",
    "fieldtype": "Fold",
-   "label": "fold"
+   "label": "Custom Text"
   },
   {
    "fieldname": "section4",
-   "fieldtype": "Section Break",
-   "label": "uiae"
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cv_pdf",
+   "fieldtype": "Attach",
+   "label": "CV (PDF)"
+  },
+  {
+   "fieldname": "cv_files",
+   "fieldtype": "Attach",
+   "label": "CV (Building Files)"
   }
  ],
- "modified": "2020-08-20 23:08:34.421031",
+ "modified": "2020-08-22 16:09:31.407356",
  "modified_by": "Administrator",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
