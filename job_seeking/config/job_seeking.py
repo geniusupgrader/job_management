@@ -26,9 +26,15 @@ def get_data():
 				},
 				{
 					"type": "doctype",
-					"name": "Text_Template_job_seeking",
-					"label": _("Text Template"),
+					"name": "Cover_Letter_job_seeking",
+					"label": _("Cover Letter"),
 					"description": _("Text Template"),
+				},
+				{
+					"type": "doctype",
+					"name": "testing_routes",
+					"label": _("testing routes"),
+					"description": _("testing routes"),
 				}
 			]
 		}

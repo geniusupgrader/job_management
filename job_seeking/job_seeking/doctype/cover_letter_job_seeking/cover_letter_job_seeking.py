@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class Text_Template_job_seeking(Document):
+class Cover_Letter_job_seeking(Document):
 	pass

@@ -19,15 +19,19 @@
   "distance",
   "location",
   "send_date",
+  "text_template",
   "section_break1",
   "url_stellenanzeige",
-  "pdf_stellenanzeige",
   "column_break2",
-  "applications_documents",
+  "pdf_stellenanzeige",
+  "section_break4",
   "cv_pdf",
   "cv_files",
+  "column_break4",
+  "certificates",
+  "applications_documents",
   "sectien_break3",
-  "text_template",
+  "notes",
   "fold1",
   "section4",
   "text"
@@ -73,7 +77,7 @@
   {
    "fieldname": "applications_documents",
    "fieldtype": "Attach",
-   "label": "Application Documnts"
+   "label": "All Application Documents in one File"
   },
   {
    "fieldname": "status",
@@ -90,23 +94,23 @@
   {
    "fieldname": "url_stellenanzeige",
    "fieldtype": "Data",
-   "label": "URL Stellenanzeige"
+   "label": "URL job advertisement"
   },
   {
    "fieldname": "pdf_stellenanzeige",
    "fieldtype": "Attach",
-   "label": "PDF Stellenanzeige"
+   "label": "PDF job advertisement"
   },
   {
    "fieldname": "ansprechpartner",
    "fieldtype": "Link",
-   "label": "Ansprechpartner",
+   "label": "Contact Person",
    "options": "Contact"
   },
   {
    "fieldname": "bewerbungsmethode",
    "fieldtype": "Table MultiSelect",
-   "label": "Bewerbungsmethode",
+   "label": "Application method",
    "options": "application_method_table_job_seeking"
   },
   {
@@ -125,15 +129,16 @@
    "fieldtype": "Section Break"
   },
   {
+   "bold": 1,
    "fieldname": "text_template",
    "fieldtype": "Link",
-   "label": "Text template",
-   "options": "Text_Template_job_seeking"
+   "label": "Cover Letter Text",
+   "options": "Cover_Letter_job_seeking"
   },
   {
    "fieldname": "send_date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Send Date"
   },
   {
    "fieldname": "location",
@@ -158,9 +163,27 @@
    "fieldname": "cv_files",
    "fieldtype": "Attach",
    "label": "CV (Building Files)"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificates",
+   "fieldtype": "Attach",
+   "label": "Certificates"
   }
  ],
- "modified": "2020-08-22 16:09:31.407356",
+ "modified": "2020-08-22 22:27:38.665503",
  "modified_by": "Administrator",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
