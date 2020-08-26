@@ -9,14 +9,18 @@
  "engine": "InnoDB",
  "field_order": [
   "job_title",
+  "section_break6",
   "company_id",
   "address",
   "ansprechpartner",
-  "status",
-  "bewerbungsmethode",
   "column_break1",
   "company_name",
-  "distance",
+  "address_read_only",
+  "contact_read_only",
+  "section_break7",
+  "status",
+  "bewerbungsmethode",
+  "column_break5",
   "location",
   "send_date",
   "text_template",
@@ -34,7 +38,8 @@
   "notes",
   "fold1",
   "section4",
-  "text"
+  "text",
+  "amended_from"
  ],
  "fields": [
   {
@@ -59,13 +64,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "distance",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Distance (Km)",
-   "read_only": 1
-  },
-  {
    "fieldname": "section_break1",
    "fieldtype": "Section Break"
   },
@@ -80,6 +78,7 @@
    "label": "All Application Documents in one File"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -181,24 +180,60 @@
    "fieldname": "certificates",
    "fieldtype": "Attach",
    "label": "Certificates"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "job_application_job_seeking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_read_only",
+   "fieldtype": "Read Only",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact_read_only",
+   "fieldtype": "Read Only",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "section_break7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break5",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-08-22 22:27:38.665503",
- "modified_by": "Administrator",
+ "is_submittable": 1,
+ "modified": "2020-08-26 19:46:57.593367",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
