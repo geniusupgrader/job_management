@@ -20,6 +20,7 @@
   "section_break7",
   "status",
   "bewerbungsmethode",
+  "publication_date_job_advertisement",
   "column_break5",
   "location",
   "send_date",
@@ -211,10 +212,15 @@
   {
    "fieldname": "column_break5",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publication_date_job_advertisement",
+   "fieldtype": "Date",
+   "label": "Publication Date"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-08-26 19:46:57.593367",
+ "modified": "2020-08-26 22:18:26.411892",
  "modified_by": "email@robinrosenstock.com",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
