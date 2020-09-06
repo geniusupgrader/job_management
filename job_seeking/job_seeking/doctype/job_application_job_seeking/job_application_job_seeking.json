@@ -9,6 +9,9 @@
  "engine": "InnoDB",
  "field_order": [
   "job_title",
+  "column_break9",
+  "status",
+  "bewerbungsmethode",
   "section_break6",
   "company_id",
   "address",
@@ -18,14 +21,13 @@
   "address_read_only",
   "contact_read_only",
   "section_break7",
-  "status",
-  "bewerbungsmethode",
-  "publication_date_job_advertisement",
+  "cover_letter_template",
+  "cover_letter_text",
   "column_break5",
   "location",
   "send_date",
-  "text_template",
   "section_break1",
+  "publication_date_job_advertisement",
   "url_stellenanzeige",
   "column_break2",
   "pdf_stellenanzeige",
@@ -37,9 +39,6 @@
   "applications_documents",
   "sectien_break3",
   "notes",
-  "fold1",
-  "section4",
-  "text",
   "amended_from"
  ],
  "fields": [
@@ -58,11 +57,10 @@
   {
    "fetch_from": "company_id.company_name",
    "fieldname": "company_name",
-   "fieldtype": "Data",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Company Name",
-   "read_only": 1
+   "label": "Company Name"
   },
   {
    "fieldname": "section_break1",
@@ -80,6 +78,7 @@
   },
   {
    "allow_on_submit": 1,
+   "bold": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -120,20 +119,8 @@
    "options": "Lead"
   },
   {
-   "fieldname": "text",
-   "fieldtype": "Long Text",
-   "label": "Custom Text"
-  },
-  {
    "fieldname": "sectien_break3",
    "fieldtype": "Section Break"
-  },
-  {
-   "bold": 1,
-   "fieldname": "text_template",
-   "fieldtype": "Link",
-   "label": "Cover Letter Text",
-   "options": "Cover_Letter_job_seeking"
   },
   {
    "fieldname": "send_date",
@@ -144,15 +131,6 @@
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
-  },
-  {
-   "fieldname": "fold1",
-   "fieldtype": "Fold",
-   "label": "Custom Text"
-  },
-  {
-   "fieldname": "section4",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "cv_pdf",
@@ -217,10 +195,27 @@
    "fieldname": "publication_date_job_advertisement",
    "fieldtype": "Date",
    "label": "Publication Date"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "cover_letter_template",
+   "fieldtype": "Link",
+   "label": "Cover Letter Template",
+   "options": "Cover_Letter_job_seeking"
+  },
+  {
+   "fetch_from": "text_template.text",
+   "fieldname": "cover_letter_text",
+   "fieldtype": "Long Text",
+   "label": "Cover Letter Text"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-08-26 22:18:26.411892",
+ "modified": "2020-09-06 13:45:13.492654",
  "modified_by": "email@robinrosenstock.com",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
