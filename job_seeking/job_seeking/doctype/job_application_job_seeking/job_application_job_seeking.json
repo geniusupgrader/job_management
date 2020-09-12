@@ -208,14 +208,14 @@
    "options": "Cover_Letter_job_seeking"
   },
   {
-   "fetch_from": "text_template.text",
+   "fetch_from": "cover_letter_template.text",
    "fieldname": "cover_letter_text",
    "fieldtype": "Long Text",
    "label": "Cover Letter Text"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-09-06 13:45:13.492654",
+ "modified": "2020-09-09 21:17:40.356355",
  "modified_by": "email@robinrosenstock.com",
  "module": "Job Seeking",
  "name": "job_application_job_seeking",
