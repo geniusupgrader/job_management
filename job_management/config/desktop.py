@@ -5,10 +5,10 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"module_name": "Job Seeking",
+			"module_name": "Job Management",
 			"color": "grey",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
-			"label": _("Job Seeking")
+			"label": _("Job Management")
 		}
 	]

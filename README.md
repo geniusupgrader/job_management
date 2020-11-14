@@ -1,4 +1,4 @@
-## Job Seeking
+## Job Management
 
 For own Applications
 
