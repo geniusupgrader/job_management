@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class job_application_job_management(Document):
+class Job_application_job_management(Document):
 	pass

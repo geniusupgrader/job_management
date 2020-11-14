@@ -110,7 +110,7 @@
    "fieldname": "bewerbungsmethode",
    "fieldtype": "Table MultiSelect",
    "label": "Application method",
-   "options": "application_method_table_job_management"
+   "options": "Application_method_table_job_management"
   },
   {
    "fieldname": "company_id",
@@ -165,7 +165,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "job_application_job_management",
+   "options": "Job_application_job_management",
    "print_hide": 1,
    "read_only": 1
   },
@@ -215,10 +215,10 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-09-09 21:17:40.356355",
- "modified_by": "email@robinrosenstock.com",
+ "modified": "2020-11-14 12:50:46.651487",
+ "modified_by": "Administrator",
  "module": "Job Management",
- "name": "job_application_job_management",
+ "name": "Job_application_job_management",
  "owner": "Administrator",
  "permissions": [
   {

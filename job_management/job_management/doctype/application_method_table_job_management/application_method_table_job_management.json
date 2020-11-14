@@ -12,14 +12,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Bewerbungsmethode",
-   "options": "application_method_job_management"
+   "options": "Application_method_job_management"
   }
  ],
  "istable": 1,
- "modified": "2020-08-15 22:55:32.370796",
+ "modified": "2020-11-14 12:50:56.262841",
  "modified_by": "Administrator",
  "module": "Job Management",
- "name": "application_method_table_job_management",
+ "name": "Application_method_table_job_management",
  "owner": "robin.rosenstock@t-online.de",
  "permissions": [],
  "quick_entry": 1,

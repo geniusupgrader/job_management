@@ -29,6 +29,12 @@ def get_data():
 					"name": "Cover_Letter_job_management",
 					"label": _("Cover Letter"),
 					"description": _("Text Template"),
+				},
+				{
+					"type": "doctype",
+					"name": "Cover_Letter_job_management",
+					"label": _("Cover Letter"),
+					"description": _("Text Template"),
 				}
 			]
 		}
