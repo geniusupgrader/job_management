@@ -29,12 +29,6 @@ def get_data():
 					"name": "Cover_Letter_job_management",
 					"label": _("Cover Letter"),
 					"description": _("Text Template"),
-				},
-				{
-					"type": "doctype",
-					"name": "testing_routes",
-					"label": _("testing routes"),
-					"description": _("testing routes"),
 				}
 			]
 		}
