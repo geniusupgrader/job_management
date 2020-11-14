@@ -1,0 +1,247 @@
+{
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:job_application.{####}",
+ "creation": "2020-01-03 11:57:50.661312",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "column_break9",
+  "status",
+  "bewerbungsmethode",
+  "section_break6",
+  "company_id",
+  "address",
+  "ansprechpartner",
+  "column_break1",
+  "company_name",
+  "address_read_only",
+  "contact_read_only",
+  "section_break7",
+  "cover_letter_template",
+  "cover_letter_text",
+  "column_break5",
+  "location",
+  "send_date",
+  "section_break1",
+  "publication_date_job_advertisement",
+  "url_stellenanzeige",
+  "column_break2",
+  "pdf_stellenanzeige",
+  "section_break4",
+  "cv_pdf",
+  "cv_files",
+  "column_break4",
+  "certificates",
+  "applications_documents",
+  "sectien_break3",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Address",
+   "options": "Address",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company_id.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "applications_documents",
+   "fieldtype": "Attach",
+   "label": "All Application Documents in one File"
+  },
+  {
+   "allow_on_submit": 1,
+   "bold": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nSent\nRejected\nSuccess"
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url_stellenanzeige",
+   "fieldtype": "Data",
+   "label": "URL job advertisement"
+  },
+  {
+   "fieldname": "pdf_stellenanzeige",
+   "fieldtype": "Attach",
+   "label": "PDF job advertisement"
+  },
+  {
+   "fieldname": "ansprechpartner",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "bewerbungsmethode",
+   "fieldtype": "Table MultiSelect",
+   "label": "Application method",
+   "options": "application_method_table_job_management"
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Link",
+   "label": "Company-ID (Lead)",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "sectien_break3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "send_date",
+   "fieldtype": "Date",
+   "label": "Send Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "cv_pdf",
+   "fieldtype": "Attach",
+   "label": "CV (PDF)"
+  },
+  {
+   "fieldname": "cv_files",
+   "fieldtype": "Attach",
+   "label": "CV (Building Files)"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificates",
+   "fieldtype": "Attach",
+   "label": "Certificates"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "job_application_job_management",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_read_only",
+   "fieldtype": "Read Only",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact_read_only",
+   "fieldtype": "Read Only",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "section_break7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publication_date_job_advertisement",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "cover_letter_template",
+   "fieldtype": "Link",
+   "label": "Cover Letter Template",
+   "options": "Cover_Letter_job_management"
+  },
+  {
+   "fetch_from": "cover_letter_template.text",
+   "fieldname": "cover_letter_text",
+   "fieldtype": "Long Text",
+   "label": "Cover Letter Text"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-09-09 21:17:40.356355",
+ "modified_by": "email@robinrosenstock.com",
+ "module": "Job Seeking",
+ "name": "job_application_job_management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "job_title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

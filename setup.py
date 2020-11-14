@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
 
-# get version from __version__ variable in job_seeking/__init__.py
-from job_seeking import __version__ as version
+# get version from __version__ variable in job_management/__init__.py
+from job_management import __version__ as version
 
 setup(
-	name='job_seeking',
+	name='job_management',
 	version=version,
 	description='For own Applications',
 	author='Robin Rosenstock',

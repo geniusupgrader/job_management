@@ -4,15 +4,15 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include job_seeking *.css
-recursive-include job_seeking *.csv
-recursive-include job_seeking *.html
-recursive-include job_seeking *.ico
-recursive-include job_seeking *.js
-recursive-include job_seeking *.json
-recursive-include job_seeking *.md
-recursive-include job_seeking *.png
-recursive-include job_seeking *.py
-recursive-include job_seeking *.svg
-recursive-include job_seeking *.txt
-recursive-exclude job_seeking *.pyc
+recursive-include job_management *.css
+recursive-include job_management *.csv
+recursive-include job_management *.html
+recursive-include job_management *.ico
+recursive-include job_management *.js
+recursive-include job_management *.json
+recursive-include job_management *.md
+recursive-include job_management *.png
+recursive-include job_management *.py
+recursive-include job_management *.svg
+recursive-include job_management *.txt
+recursive-exclude job_management *.pyc
