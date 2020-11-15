@@ -15,7 +15,7 @@
   "section_break6",
   "company_id",
   "address",
-  "ansprechpartner",
+  "contact_person",
   "column_break1",
   "company_name",
   "address_read_only",
@@ -99,12 +99,6 @@
    "fieldname": "pdf_stellenanzeige",
    "fieldtype": "Attach",
    "label": "PDF job advertisement"
-  },
-  {
-   "fieldname": "ansprechpartner",
-   "fieldtype": "Link",
-   "label": "Contact Person",
-   "options": "Contact"
   },
   {
    "fieldname": "bewerbungsmethode",
@@ -212,11 +206,17 @@
    "fieldname": "cover_letter_text",
    "fieldtype": "Long Text",
    "label": "Cover Letter Text"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-14 12:50:46.651487",
- "modified_by": "Administrator",
+ "modified": "2020-11-15 11:37:44.419989",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Job_application_job_management",
  "owner": "Administrator",

@@ -12,3 +12,14 @@ frappe.ui.form.on('Job_application_job_management', {
 		})
 	}
 });
+
+frappe.ui.form.on('Job_application_job_management', {
+	contact_person: function(frm) {
+		frappe.db.get_doc('Contact', cur_frm.doc.contact_person).then(doc =>{ 
+			var first_name = doc.first_name;
+			var last_name = doc.last_name;
+			frm.set_value('contact_read_only', first_name+" "+last_name)
+			frm.refresh_field('contact_read_only');
+		})
+	}
+});
