@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class Curriculum_vitae_job_management(Document):
-		pass
+class symbols_and_images_job_management(Document):
+	pass

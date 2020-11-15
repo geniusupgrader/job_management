@@ -1,20 +1,96 @@
 {
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
  "creation": "2020-11-10 22:03:26.703637",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "person",
+  "home_address",
+  "logo_address",
+  "logo_telephone",
+  "image",
+  "logo_email",
+  "logo_website",
+  "logo_github",
+  "logo_linkedin",
+  "logo_xing"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "name"
+   "label": "name",
+   "unique": 1
+  },
+  {
+   "fetch_from": "person.address",
+   "fieldname": "home_address",
+   "fieldtype": "Read Only",
+   "label": "Home-Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "person",
+   "fieldtype": "Link",
+   "label": "Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "logo_address",
+   "fieldtype": "Link",
+   "label": "Logo_address",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fetch_from": "person.image",
+   "fieldname": "image",
+   "fieldtype": "Read Only",
+   "label": "image"
+  },
+  {
+   "fieldname": "logo_telephone",
+   "fieldtype": "Link",
+   "label": "Logo_telephone",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fieldname": "logo_email",
+   "fieldtype": "Link",
+   "label": "Logo_email",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fieldname": "logo_website",
+   "fieldtype": "Link",
+   "label": "Logo_website",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fieldname": "logo_github",
+   "fieldtype": "Link",
+   "label": "Logo_github",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fieldname": "logo_linkedin",
+   "fieldtype": "Link",
+   "label": "Logo_linkedin",
+   "options": "symbols_and_images_job_management"
+  },
+  {
+   "fieldname": "logo_xing",
+   "fieldtype": "Link",
+   "label": "Logo_xing",
+   "options": "symbols_and_images_job_management"
   }
  ],
- "modified": "2020-11-10 22:03:26.703637",
- "modified_by": "Administrator",
+ "modified": "2020-11-15 18:41:28.532254",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Curriculum_vitae_job_management",
  "owner": "Administrator",
@@ -32,7 +108,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
