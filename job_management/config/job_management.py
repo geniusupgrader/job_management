@@ -8,13 +8,13 @@ def get_data():
 			"items": [
 				{
 					"type": "doctype",
-					"name": "job_application_job_management",
+					"name": "Job_application_job_management",
 					"label": _("Job Application"),
 					"description": _("Job Application"),
 				},
 				{
 					"type": "doctype",
-					"name": "application_method_job_management",
+					"name": "Application_method_job_management",
 					"label": _("Application Method"),
 					"description": _("Application Method"),
 				},
@@ -32,8 +32,8 @@ def get_data():
 				},
 				{
 					"type": "doctype",
-					"name": "Cover_Letter_job_management",
-					"label": _("Cover Letter"),
+					"name": "Curriculum_vitae_job_management",
+					"label": _("Curriculum Vitae (CV)"),
 					"description": _("Text Template"),
 				}
 			]
