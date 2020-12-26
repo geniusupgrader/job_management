@@ -10,15 +10,32 @@
  "field_order": [
   "name1",
   "person",
+  "table",
+  "sectionpersonal",
+  "personaldatatable",
+  "sectionsocialmedia",
+  "socialmediatable",
+  "sectionwork",
+  "work_history",
+  "sectionacademichistory",
+  "academic_history",
+  "sectioneducational_history",
+  "educational_history",
+  "skillstable",
+  "section_qualifications",
+  "qualifications",
+  "section_interests",
+  "interesttable",
+  "section",
+  "driver_licenses",
+  "languages",
+  "date",
+  "place",
+  "signature",
+  "image_signature",
+  "sectionreadonly",
   "home_address",
-  "logo_address",
-  "logo_telephone",
-  "image",
-  "logo_email",
-  "logo_website",
-  "logo_github",
-  "logo_linkedin",
-  "logo_xing"
+  "image"
  ],
  "fields": [
   {
@@ -41,55 +58,148 @@
    "options": "Contact"
   },
   {
-   "fieldname": "logo_address",
-   "fieldtype": "Link",
-   "label": "Logo_address",
-   "options": "symbols_and_images_job_management"
-  },
-  {
    "fetch_from": "person.image",
    "fieldname": "image",
    "fieldtype": "Read Only",
    "label": "image"
   },
   {
-   "fieldname": "logo_telephone",
-   "fieldtype": "Link",
-   "label": "Logo_telephone",
-   "options": "symbols_and_images_job_management"
+   "collapsible": 1,
+   "fieldname": "sectionreadonly",
+   "fieldtype": "Section Break",
+   "label": "sectionreadonly"
   },
   {
-   "fieldname": "logo_email",
-   "fieldtype": "Link",
-   "label": "Logo_email",
-   "options": "symbols_and_images_job_management"
+   "fieldname": "work_history",
+   "fieldtype": "Table",
+   "label": "Beruflicher Werdegang",
+   "options": "cv_entries_table_job_management"
   },
   {
-   "fieldname": "logo_website",
-   "fieldtype": "Link",
-   "label": "Logo_website",
-   "options": "symbols_and_images_job_management"
+   "fieldname": "academic_history",
+   "fieldtype": "Table",
+   "label": "Akademische Laufbahn",
+   "options": "cv_entries_table_job_management"
   },
   {
-   "fieldname": "logo_github",
-   "fieldtype": "Link",
-   "label": "Logo_github",
-   "options": "symbols_and_images_job_management"
+   "fieldname": "educational_history",
+   "fieldtype": "Table",
+   "label": "Schulische Ausbildung",
+   "options": "cv_entries_table_job_management"
   },
   {
-   "fieldname": "logo_linkedin",
-   "fieldtype": "Link",
-   "label": "Logo_linkedin",
-   "options": "symbols_and_images_job_management"
+   "fieldname": "interesttable",
+   "fieldtype": "Table",
+   "label": "Interests",
+   "options": "cv_interests_table_job_management"
   },
   {
-   "fieldname": "logo_xing",
-   "fieldtype": "Link",
-   "label": "Logo_xing",
-   "options": "symbols_and_images_job_management"
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Ort"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "image_signature",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Signature",
+   "options": "signature"
+  },
+  {
+   "fieldname": "sectionpersonal",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "sectionwork",
+   "fieldtype": "Section Break",
+   "label": "Work History"
+  },
+  {
+   "fieldname": "sectionacademichistory",
+   "fieldtype": "Section Break",
+   "label": "Academic History"
+  },
+  {
+   "fieldname": "sectioneducational_history",
+   "fieldtype": "Section Break",
+   "label": "Educational History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_interests",
+   "fieldtype": "Section Break",
+   "label": "Interests"
+  },
+  {
+   "fieldname": "personaldatatable",
+   "fieldtype": "Table",
+   "label": "Pers\u00f6nliche Daten",
+   "options": "cv_personal_details_table_job_management"
+  },
+  {
+   "fieldname": "socialmediatable",
+   "fieldtype": "Table",
+   "label": "Social Media Links",
+   "options": "cv_personal_details_table_job_management"
+  },
+  {
+   "fieldname": "sectionsocialmedia",
+   "fieldtype": "Section Break",
+   "label": "Social Media"
+  },
+  {
+   "fieldname": "section_qualifications",
+   "fieldtype": "Section Break",
+   "label": "Weiterbildungen"
+  },
+  {
+   "fieldname": "qualifications",
+   "fieldtype": "Table",
+   "label": "Weiterbildungen",
+   "options": "cv_personal_details_table_job_management"
+  },
+  {
+   "fieldname": "driver_licenses",
+   "fieldtype": "Table",
+   "label": "Fahrerlaubnisklassen",
+   "options": "driver_license_table_job_managament"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Section Break",
+   "label": "Section"
+  },
+  {
+   "fieldname": "skillstable",
+   "fieldtype": "Table",
+   "label": "F\u00e4higkeiten",
+   "options": "cv_personal_details_table_job_management"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table",
+   "options": "CV_section_table_job_management"
+  },
+  {
+   "fieldname": "languages",
+   "fieldtype": "Table",
+   "label": "Sprachkenntnisse",
+   "options": "cv_languages_table_job_management"
   }
  ],
- "modified": "2020-11-15 18:41:28.532254",
+ "modified": "2020-12-25 22:04:04.418417",
  "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Curriculum_vitae_job_management",

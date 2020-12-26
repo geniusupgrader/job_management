@@ -84,7 +84,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Draft\nSent\nRejected\nSuccess"
+   "options": "Draft\nEdited\nSent\nRejected\nSuccess"
   },
   {
    "fieldname": "column_break2",
@@ -215,7 +215,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-15 12:20:38.229321",
+ "modified": "2020-12-18 11:05:06.151773",
  "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Job_application_job_management",

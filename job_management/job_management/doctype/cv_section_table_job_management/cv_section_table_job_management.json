@@ -1,0 +1,44 @@
+{
+ "creation": "2020-12-25 20:00:32.183245",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_name",
+  "section_type",
+  "section_variant"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Section Name"
+  },
+  {
+   "fieldname": "section_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Section Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "section_variant",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Section Variant",
+   "options": "section_type"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-12-25 22:24:20.216246",
+ "modified_by": "Administrator",
+ "module": "Job Management",
+ "name": "CV_section_table_job_management",
+ "owner": "email@robinrosenstock.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

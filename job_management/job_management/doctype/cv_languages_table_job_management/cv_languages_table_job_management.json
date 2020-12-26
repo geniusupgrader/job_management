@@ -1,0 +1,42 @@
+{
+ "creation": "2020-12-25 22:03:16.144357",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "language",
+  "proficiency",
+  "percent"
+ ],
+ "fields": [
+  {
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Language"
+  },
+  {
+   "fieldname": "proficiency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Proficiency"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Percent "
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-12-25 22:24:20.063974",
+ "modified_by": "Administrator",
+ "module": "Job Management",
+ "name": "cv_languages_table_job_management",
+ "owner": "email@robinrosenstock.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,70 @@
+{
+ "creation": "2020-12-21 18:51:02.862720",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position",
+  "company",
+  "place",
+  "start_date",
+  "end_date",
+  "subitem",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Place"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position"
+  },
+  {
+   "default": "0",
+   "fieldname": "subitem",
+   "fieldtype": "Check",
+   "label": "Subitem"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-12-24 13:45:08.787251",
+ "modified_by": "email@robinrosenstock.com",
+ "module": "Job Management",
+ "name": "cv_entries_table_job_management",
+ "owner": "email@robinrosenstock.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

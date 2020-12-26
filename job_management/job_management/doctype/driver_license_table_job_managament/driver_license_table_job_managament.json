@@ -1,0 +1,34 @@
+{
+ "creation": "2020-12-24 14:57:33.688265",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "value",
+  "icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Value"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-12-25 22:24:20.672751",
+ "modified_by": "Administrator",
+ "module": "Job Management",
+ "name": "driver_license_table_job_managament",
+ "owner": "email@robinrosenstock.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
