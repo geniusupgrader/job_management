@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "field:bewerbungsmethode",
  "creation": "2020-02-02 11:37:35.379089",
  "doctype": "DocType",
@@ -18,9 +17,8 @@
    "unique": 1
   }
  ],
- "links": [],
- "modified": "2020-04-04 17:37:37.778731",
- "modified_by": "Administrator",
+ "modified": "2020-12-29 15:43:05.236550",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Application_method_job_management",
  "owner": "robin.rosenstock@t-online.de",
@@ -41,7 +39,5 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }

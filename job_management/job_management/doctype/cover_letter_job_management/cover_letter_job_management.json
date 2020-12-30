@@ -29,8 +29,8 @@
    "options": "Job_Classification_job_management"
   }
  ],
- "modified": "2020-08-22 22:14:35.196226",
- "modified_by": "Administrator",
+ "modified": "2020-12-29 15:43:48.993574",
+ "modified_by": "email@robinrosenstock.com",
  "module": "Job Management",
  "name": "Cover_Letter_job_management",
  "owner": "Administrator",
@@ -50,6 +50,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1,
- "track_views": 1
+ "track_changes": 1
 }
